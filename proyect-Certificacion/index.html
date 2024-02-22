@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Form Certification</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <h1 id="title">Building a Form</h1>
+  <p id="description">This app is building a form for get a certification freecodeCamp</p> 
+  <form id="survey-form">
+    <label for="name" id="name-label" class="survey">Name</label>
+    <input id="name" class="survey" type="text" required placeholder="Input name" >
+    <label for= "email" email-label" class="survey">Email</label>
+    <input id="email" class="survey" type="email" required placeholder="Input email">
+    <label for="number" id="number-label" class="survey">Number</label>
+    <input id="number" class="survey" type="number" min="5" max="12" placeholder="Input number">
+        <p>What is your favorite sport?</p>
+        <select id="dropdown" class="survey">
+            <option class="survey">select one</option>
+            <option class="survey">Soccer</option>
+            <option class="survey">Basketball</option>
+            <option class="survey">Rugby</option>
+            <option class="survey">voleyball</option>
+          </select>
+        <section id="radio-survey">
+            <p>How often do you practice sport?</p>
+            <input class="survey-radio" type="radio" name="radio1" value="Always">Always
+            <input class="survey-radio" type="radio" name="radio1" value="Sometimes"> Sometimes
+            <input class="survey-radio" type="radio" name="radio1" value="Never"> Never    
+        </section>      
+    <div id="check-survey">
+        <p>choose terms and conditions</p>
+        <input class="survey-checkbox" type="checkbox" value="check">
+    </div>
+    <p>write your suggestion? </p>
+    <textarea class="survey">write your comment here, please</textarea>
+    <button class="survey" id="submit">submit</button>
+  </form>
+</body>  
+</html>
